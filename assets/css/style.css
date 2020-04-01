@@ -1,0 +1,510 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    -webkit-font-smoothing: antialised;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2{
+    font-family: 'Abril Fatface', cursive;
+    color: #310080;
+}
+
+h1{
+    padding-top: 60px;
+    padding-bottom: 40px;    
+}
+
+h2{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+h3, h4{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+}
+
+h3{
+    font-size: 21px ;
+    font-weight: 900 !important;
+}
+
+h4{
+    font-size: 19px !important;
+    font-weight: 700 !important;
+
+}
+
+p{
+    font-family: 'Source Sans Pro', cursive;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+span a:link, span a:active, span a:visited{
+    text-decoration: black;
+    color: black;
+}
+
+.negrito{
+    font-weight: bolder;
+}
+
+.modal-content{
+    border-radius: 15px !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.modal-body{
+    padding: 20px 35px !important;
+}
+
+.close{ 
+    font-size: 10px !important;
+}
+
+.button-close{
+    color: #270066;
+    font-weight: 800;
+    font-size: 40px;
+    top: 5px;
+}
+
+.button{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    margin: 5px 0 5px 0;
+}
+
+#sobre, #coaching, #oportunidades, #parcerias, #frases{
+    padding-top: 100px;
+    background-color: #F4F4F4;
+}
+
+.site-home{
+    height: 90vh;
+    min-height: 85vh;
+    background-color: #F4F4F4;
+}
+
+.home{
+    position: relative;
+}
+
+.link-home{
+    position: relative;
+    top: 60vh;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+    text-decoration-line: underline;
+
+    color: #424242;
+}
+
+.porta1, .porta2{
+    width: 16vw;
+    height: 70vh;
+    background: #FFFFFF;
+    opacity: 0.7;
+    box-shadow: inset 0px 4px 20px rgba(65, 0, 169, 0.22);
+    border-radius: 20px;
+    position: absolute;
+    top: 5vw;
+    min-width: 200px;
+}
+
+.porta1{
+    right: calc(50% + 8%);
+}
+
+.porta2{
+    left: calc(50% + 8%);
+}
+
+@media only screen and (max-width: 1500px) {
+    .porta1{
+        right: calc(50% + 100px);
+    }
+    
+    .porta2{
+        left: calc(50% + 100px);
+    }
+} 
+
+.logo{
+    position: absolute;
+    top: 10vh;
+    left: calc(50% - 74px);
+    pointer-events: unset !important;
+    user-select: initial !important;
+}
+
+.poltronas{
+    position: relative;
+    top: 40vh;
+    width: 80vw;
+    min-width: 1050px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /* left: calc(50% - 795px); */
+    /* background-image: url(assets/img/poltrona.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white; */
+}
+
+
+
+.sobre{
+    position: relative;
+    width: 90vw;
+    padding: 50px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+
+.botao-sobre{
+    padding: 20px;
+
+    background: #4100A9;
+}
+
+.paragrafo-sobre{
+    left: 0;
+    width: 50%;
+    min-height: 670px;
+
+}
+
+.retrato-sobre{
+    position: absolute;
+    width: 50%;
+    height: 661.37px;
+    right: -12vh;
+    top: 7%;
+
+    background: url(/assets/img/retrato.png);
+    background-color: #eeeeee;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 0px 0px 30px;
+}
+
+
+.coaching{
+    position: relative;
+    width: 90vw;
+    padding: 50px;
+    margin: 0 auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.paragrafo-coaching{
+    left: 0;
+    width: 50%;
+}
+
+.conheca-coaching{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    right: -12vh;
+    top: 10%;
+    padding: 30px;
+    
+    padding-right: 15vh;
+
+    background-color: #7927F8;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px 0px 0px 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .paragrafo-coaching{
+        width: 100%;
+    }
+    .conheca-coaching{
+        position: unset;
+        width: 100%;
+        border-radius: 30px 30px 30px 30px;
+
+    }
+}
+
+.conheca-coaching p{
+    color: white;
+    font-size: 14px;
+}
+
+.conheca-coaching h3, .conheca-coaching h4{
+    color: white;
+    font-weight: 600;
+}
+
+
+.oportunidades{
+    padding-bottom: 80px;
+    width: 100%;
+    background: #310080;
+}
+
+.oportunidades h1, .oportunidades h2, .oportunidades p{
+    text-align: center;
+    color: white;
+}
+
+.botao-saiba-mais{
+    width: 220px;
+    height: 65px;
+    left: 177px;
+    top: 3097px;
+    background: #7927F8;
+}
+
+.beneficios{
+    margin-top: 100px;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.beneficios h1, .beneficios h2, .beneficios p, .depoimentos h1, .depoimentos h2, .depoimentos p, .parcerias h1, .parcerias h2, .parcerias p, .frases h1, .frases h3{
+    text-align: center;
+}
+
+.beneficios h1{
+    padding-top: 0;
+}
+
+.beneficios-cards{
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.8s ease-in-out;
+    opacity: 0;
+}
+
+.beneficios-h2{
+    display: table;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.beneficios-card{
+    padding: 10px;
+    background: #F4F4F4;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 10px;
+    min-height: 70px;
+    width: 100%;
+    display: table; 
+}
+
+.beneficios-card span{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #310080;
+    padding: 0;
+    margin: 0;
+
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.beneficios-imagens{
+    position: absolute;
+    width: 100%;
+}
+
+#cerebro, #coracao{
+    transition: all .8s ease-out;
+}
+
+.depoimentos{
+    margin-top: 100px;
+    z-index: 5;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.depoimentos-autor{
+    color: #310080;
+    font-family: 'Abril Fatface';
+
+}
+
+.depoimentos-carousel{
+    width: 70vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.depoimentos-carousel::after{    
+    position:absolute;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 140px;
+    text-align: center;
+    content: '“';
+    color: #4100A9;
+    top: 20px;
+}
+
+.carousel-item{
+    padding: 1vh 4vw 1vh 4vw;
+}
+
+.carousel-item p{
+    text-align: left;
+}
+
+.carousel-indicators li{
+    border: 4px solid #310080 !important;
+    border-radius: 20px !important;
+    width: 20px !important;
+    height: 20px !important;    
+}
+
+.carousel-indicators li.active{
+    background-color: #310080 !important;
+}
+
+#parcerias{
+    padding-left: 6vh;
+    padding-right: 6vh;
+}
+
+.parcerias{
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+.parcerias h2{
+    color: #424242;
+    padding-top: 0;
+}
+
+.parcerias h2, .parcerias p{
+    text-align: left;
+}
+
+.parcerias-img{
+    max-height: 286px;
+    max-width: 197px;
+    float: right;
+}
+
+.parcerias a:link, .parcerias a:active, .parcerias a:visited{
+    font-weight: bolder;
+    color: #4100A9;
+} 
+
+#frases{
+    /* background: url(/assets/img/background-frases.png) 50% 0 repeat fixed; */
+    background-image: url(/assets/img/background-frases.png);
+    background-size: cover;
+    background-position: fixed;
+    background-clip: content-box;
+    background-color: #F4F4F4;
+}
+
+
+.frases{
+    position: relative;
+    width: 100%;
+}
+
+.frases h1{
+    color: white;
+    padding: 14vh 25vw 1vw 25vw;
+    font-size: 3.0em;
+}
+
+
+.frases h3{
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    line-height: 35px;
+    padding-bottom: 6vh;
+}
+
+
+.frases::after{
+    position: absolute;
+    font-family: 'Abril Fatface';
+    content: '“';
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 320px;
+    top: 2vh;
+    left: 15vw;
+}
+
+
+.rodape{
+    background-color: #424242;
+    min-height: 200px;
+    line-height: 20px;
+
+}
+
+.contatos{
+    position: fixed;
+    right: 0;
+    top: 200px;
+    background-color: white;
+    border: 7px solid white;
+    border-radius: 30px 0 0 30px;
+    opacity: 0.3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.contatos:hover{
+    opacity: 1 !important;
+    right: 0 !important;
+
+}
+
