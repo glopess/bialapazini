@@ -56,5 +56,5 @@ function openBoxEffects() {
     beneficiosCards.style.opacity = "1"; ""
     setTimeout(function () {
         imagens.style.visibility = "hidden";
-    }, 2000);
+    }, 800);
 }
