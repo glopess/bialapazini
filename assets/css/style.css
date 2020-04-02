@@ -102,9 +102,13 @@ span a:link, span a:active, span a:visited{
     margin: 5px 0 5px 0;
 }
 
-#sobre, #coaching, #oportunidades, #parcerias, #frases{
+#sobre, #coaching, #oportunidades, #parcerias{
     padding-top: 100px;
     background-color: #F4F4F4;
+}
+
+#parcerias{
+    padding-bottom: 100px;
 }
 
 .site-home{
@@ -263,10 +267,6 @@ span a:link, span a:active, span a:visited{
         width: 100%;
     }
 
-    .carousel-tamanho{
-        max-width: 90vw !important;
-    }
-
     .paragrafo-coaching{
         width: 100%;
     }
@@ -281,6 +281,11 @@ span a:link, span a:active, span a:visited{
         width: 100%;
         border-radius: 30px 30px 30px 30px;
         padding-right: 30px;
+    }
+
+    .depoimentos-carousel::after{    
+        font-size: 140px !important;
+        top: 5px !important;
     }
 
     .frases h1{
@@ -423,6 +428,7 @@ span a:link, span a:active, span a:visited{
 
 .carousel-tamanho{
     min-height: 560px !important;
+    max-width: 100vw;
 }
 .carousel-item{
     padding: 1vh 4vw 1vh 4vw;
