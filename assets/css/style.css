@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+html, body{
     overflow-x: hidden;
 }
 
@@ -424,6 +424,10 @@ span a:link, span a:active, span a:visited{
     content: '“';
     color: #4100A9;
     top: 20px;
+}
+
+.carousel{
+    max-width: 100vw;
 }
 
 .carousel-tamanho{
