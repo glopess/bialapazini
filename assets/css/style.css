@@ -93,7 +93,7 @@ span a:link, span a:active, span a:visited{
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -202,9 +202,11 @@ span a:link, span a:active, span a:visited{
 
 
 .botao-sobre{
-    padding: 20px;
-
+    padding: 15px 35px;
     background: #4100A9;
+    margin: auto;
+    margin-top: 50px;
+    display: block;
 }
 
 .paragrafo-sobre{
@@ -316,16 +318,17 @@ span a:link, span a:active, span a:visited{
     background: #310080;
 }
 
+.oportunidades-box{
+    padding: 2vh 7vw;
+}
+
 .oportunidades h1, .oportunidades h2, .oportunidades p{
     text-align: center;
     color: white;
 }
 
 .botao-saiba-mais{
-    width: 220px;
-    height: 65px;
-    left: 177px;
-    top: 3097px;
+    padding: 15px 45px;
     background: #7927F8;
 }
 
@@ -526,11 +529,43 @@ span a:link, span a:active, span a:visited{
 }
 
 
-.rodape{
+#rodape{
     background-color: #424242;
     min-height: 200px;
-    line-height: 20px;
+}
 
+.rodape-links{
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+}
+
+.rodape-contatos{
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+.rodape h2{
+    color: white;
+}
+.rodape ul{
+    padding-left: 0;
+}
+
+.rodape li{
+    list-style: none;
+    margin-top: 8px;
+}
+
+.rodape li a {
+    color: white;
+    text-decoration: underline;    
+    font-size: 17px;
+    font-family: 'Source Sans Pro';
+}
+
+.rodape img{
+    padding: 5px 10px;
 }
 
 .contatos{

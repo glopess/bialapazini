@@ -37,10 +37,10 @@ function openBeneficiosProfissionais() {
     $(".pessoais").css("display", "none");
     openBoxEffects();
 }
-function moveImages() {
-    cerebro.style.transform = `translateX(-100%)`;
-    coracao.style.transform = `translateX(100%)`;
-}
+// function moveImages() {
+//     cerebro.style.transform = `translateX(-100%)`;
+//     coracao.style.transform = `translateX(100%)`;
+// }
 function openBoxEffects() {
     moveImages();
     beneficiosCards.style.visibility = "visible";
