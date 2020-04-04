@@ -50,3 +50,6 @@ function openBoxEffects() {
     }, 800);
 }
 
+function openLink(link){
+    window.open(link, '_blank');
+}

@@ -596,3 +596,7 @@ span a:link, span a:active, span a:visited{
 
 }
 
+.links{
+    cursor: pointer;
+}
+
