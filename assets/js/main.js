@@ -14,7 +14,6 @@ $(function () {
 
 
 function changeCss() {
-    var bodyElement = document.querySelector("body");
     var navElement = document.getElementById("redesSociais");
     this.scrollY > 700 ? navElement.style.opacity = .2 : navElement.style.opacity = 1;
     this.scrollY > 700 ? navElement.style.right = '-21px' : navElement.style.right = '0';
@@ -37,19 +36,22 @@ function openBeneficiosProfissionais() {
     $(".pessoais").css("display", "none");
     openBoxEffects();
 }
-// function moveImages() {
-//     cerebro.style.transform = `translateX(-100%)`;
-//     coracao.style.transform = `translateX(100%)`;
-// }
+
 function openBoxEffects() {
-    moveImages();
     beneficiosCards.style.visibility = "visible";
     beneficiosCards.style.opacity = "1"; ""
-    setTimeout(function () {
-        imagens.style.visibility = "hidden";
-    }, 800);
 }
 
 function openLink(link){
-    window.open(link, '_blank');
+    window.open(link, '_blank');    
 }
+
+$('#coracao').click(function() {
+    $('.slide-in').toggleClass('show');
+    openBeneficiosPessoais();
+});
+
+$('#cerebro').click(function() {
+    $('.slide-in').toggleClass('show');
+      openBeneficiosProfissionais();
+});
