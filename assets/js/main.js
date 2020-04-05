@@ -15,7 +15,7 @@ $(function () {
 
 $('.carousel').carousel({
     interval: 7000
-  })
+})
 
 function changeCss() {
     var navElement = document.getElementById("redesSociais");
@@ -70,4 +70,9 @@ $('#cerebro').click(function () {
 
 function openLink(link) {
     window.open(link, '_blank');
+}
+
+
+function clicktest(){
+    window.scrollTo( 0, 5000 );
 }
