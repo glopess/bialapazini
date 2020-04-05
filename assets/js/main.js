@@ -24,34 +24,46 @@ window.addEventListener("scroll", changeCss, false);
 var beneficiosCards = document.getElementById("beneficios-cards");
 var cerebro = document.getElementById("cerebro");
 var coracao = document.getElementById("coracao");
-var imagens = document.getElementById("imagens");
+var slideIn = $(".slide-in");
 
 function openBeneficiosPessoais() {
     $(".pessoais").css("display", "table-cell");
     $(".profissionais").css("display", "none");
-    openBoxEffects();
 }
+
 function openBeneficiosProfissionais() {
     $(".profissionais").css("display", "table-cell");
     $(".pessoais").css("display", "none");
-    openBoxEffects();
 }
 
-function openBoxEffects() {
-    beneficiosCards.style.visibility = "visible";
-    beneficiosCards.style.opacity = "1"; ""
+function removeClassShow() {
+    $(".slide-in").removeClass('show');
 }
 
-function openLink(link){
-    window.open(link, '_blank');    
+function openBox() {
+    beneficiosCards.style.display = "unset";
+    beneficiosCards.style.opacity = "1";
+    setTimeout(function () {
+        $("#coracao").remove();
+        $("#cerebro").remove();
+    }, 1500)
+
 }
 
-$('#coracao').click(function() {
-    $('.slide-in').toggleClass('show');
+$('#coracao').click(function () {
+    removeClassShow();
     openBeneficiosPessoais();
+    openBox();
+
 });
 
-$('#cerebro').click(function() {
-    $('.slide-in').toggleClass('show');
-      openBeneficiosProfissionais();
+$('#cerebro').click(function () {
+    removeClassShow();
+    openBeneficiosProfissionais();
+    openBox();
 });
+
+
+function openLink(link) {
+    window.open(link, '_blank');
+}
