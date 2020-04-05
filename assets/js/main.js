@@ -74,5 +74,8 @@ function openLink(link) {
 
 
 function clicktest(){
-    window.scrollTo( 0, 5000 );
+    window.scrollTo({
+        top: 5500,
+        behavior: 'smooth',
+      });
 }
