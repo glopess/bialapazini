@@ -4,7 +4,10 @@ html {
 
 html, body{
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
+
+
 
 h1,h2,h3,h4,h5,h6,p{
     -webkit-font-smoothing: antialised;
@@ -344,7 +347,7 @@ span a:link, span a:active, span a:visited{
     margin-top: 100px;
     padding-bottom: 80px;
     width: 100%;
-    min-height: 550px;
+    min-height: 700px;
 }
 
 .beneficios h1, .beneficios h2, .beneficios p, .depoimentos h1, .depoimentos h2, .depoimentos p, .parcerias h1, .parcerias h2, .parcerias p, .frases h1, .frases h3{
@@ -606,7 +609,18 @@ span a:link, span a:active, span a:visited{
     cursor: pointer;
 }
 
+.blog-logo{
+    position: fixed;
+    width: 155px;
+    height: 155px;
+    left: 0px;
+    top: 0px;
 
+    background: url('/assets/img/blog-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 
 

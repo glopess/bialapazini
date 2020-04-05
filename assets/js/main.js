@@ -13,6 +13,10 @@ $(function () {
 });
 
 
+$('.carousel').carousel({
+    interval: 7000
+  })
+
 function changeCss() {
     var navElement = document.getElementById("redesSociais");
     this.scrollY > 700 ? navElement.style.opacity = .2 : navElement.style.opacity = 1;
